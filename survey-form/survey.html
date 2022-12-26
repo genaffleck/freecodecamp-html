@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">My Survey Form</h1>
+    <p>A survey about your skills in mathematics</p>
+    <div>
+      <form method="post" action="www.google.com">
+        <fieldset>
+          <label for="fname"> Name
+            <input type="text" id="fname" name="fname" placeholder="Enter your name" required></input>
+          </label>
+          <label for="email"> Email
+            <input type="email" id="email" name="email" placeholder="Enter your email" required></input>
+          </label>
+          <label for="age"> Age (optional)
+            <input type="number" id="age" name="age" placeholder="Enter your age" required></input>
+          </label>
+          <label for="current-role">Which option best describes your current role?
+            <select id="current-role" name="current-role" required>
+              <option value="">(Select current role)</option>
+              <option value="1">Student</option>
+              <option value="2">Full Time Job</option>
+              <option value="3">Full Time Learner</option>
+              <option value="4">Prefer not to Say</option>
+              <option value="5">Others</option>
+            </select>
+          </label>
+          <label>
+            <p>Would you recommend freecodecamp to a friend?</p>
+          </label>
+          <label for="recommend">
+              <input type="radio" id="definitely" name="recommend">Definitely</input>
+          </label>
+          <label for="recommend">
+            <input type="radio" id="maybe" name="recommend">Maybe</input>
+          </label>
+          <label for="recommend">
+            <input type="radio" id="not-sure" name="recommend">Not Sure</input>
+          </label>
+          <label> What is your favorite feature of freecodecamp?
+            <select>
+              <option value="">(Select one)</option>
+              <option value="1">Challenges</option>
+              <option value="2">Projects</option>
+              <option value="3">Community</option>
+              <option value="4">Open Source</option>
+            </select>
+          </label>
+          <div>
+            <p>What would you like to see improved? (Check all that apply)</p>
+          </div>
+          <label><input type="checkbox">Front-End Projects</input></label>
+          <label><input type="checkbox">Back-End Projects</input></label>
+          <label><input type="checkbox">Data Visualization</input></label>
+          <label><input type="checkbox">Challenges</input></label>
+          <label><input type="checkbox">Open Source Community</input></label>
+          <label><input type="checkbox">Gitter help rooms</input></label>
+          <label><input type="checkbox">Videos</input></label>
+          <label><input type="checkbox">City Meetups</input></label>
+          <label><input type="checkbox">Wiki</input></label>
+          <label><input type="checkbox">Forum</input></label>
+          <label><input type="checkbox">Additional Courses</input></label>
+
+          <label> Any comments and suggestions?
+            <textarea ></textarea>
+          </label>
+        </fieldset>
+      </form>
+    </div>  
+  </body>
+</html>
